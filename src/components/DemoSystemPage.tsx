@@ -171,7 +171,7 @@ export function DemoSystemPage({ onBack }: DemoSystemPageProps) {
 
             <div className="mb-4">
               <h2 className="text-gray-900 mb-1" style={{ fontSize: '16px', fontWeight: 600 }}>Rekomendasi Bahan Pengganti</h2>
-              <p className="text-xs text-gray-400">Top 5 bahan diurutkan berdasarkan rata-rata (Avg) dari Euclidean, Manhattan, dan Cosine Similarity</p>
+              <p className="text-xs text-gray-400">Identifikasi bahan ditentukan berdasarkan Nilai dari Euclidean, Manhattan, dan Cosine Similarity</p>
             </div>
 
             <div className="space-y-3 mb-6">
