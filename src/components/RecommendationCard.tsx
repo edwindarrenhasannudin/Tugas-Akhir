@@ -8,12 +8,11 @@ interface RecommendationCardProps {
   detectedIngredient: Ingredient;
 }
 
-export function RecommendationCard({ rec, index, detectedIngredient }: RecommendationCardProps) {
+export function RecommendationCard({ rec, detectedIngredient }: RecommendationCardProps) {
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 transition-colors">
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-baseline gap-2">
-          <span className="text-sm text-gray-400" style={{ fontWeight: 600 }}>{index + 1}.</span>
           <div>
             <span className="text-gray-900" style={{ fontSize: '15px', fontWeight: 600 }}>{rec.ingredient.name}</span>
             <span className="text-xs text-gray-400 ml-2">{rec.ingredient.category}</span>
@@ -26,7 +25,6 @@ export function RecommendationCard({ rec, index, detectedIngredient }: Recommend
           <span className="text-gray-400">Euc <span className="text-gray-700" style={{ fontWeight: 600 }}>{rec.euc.toFixed(4)}</span></span>
           <span className="text-gray-400">Man <span className="text-gray-700" style={{ fontWeight: 600 }}>{rec.man.toFixed(4)}</span></span>
           <span className="text-gray-400">Cos <span className="text-gray-700" style={{ fontWeight: 600 }}>{rec.cos.toFixed(4)}</span></span>
-          <span className="text-gray-400">Avg <span className="text-blue-700" style={{ fontWeight: 600 }}>{rec.avg.toFixed(4)}</span></span>
         </div>
       </div>
 
